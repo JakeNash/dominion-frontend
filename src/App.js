@@ -25,7 +25,7 @@ class KingdomPicker extends Component {
         }),
         {}
     ),
-    kingdom: {},
+    kingdom: {cards: [], cardLikes: [], keys: []},
   };
 
   selectAllCheckboxes = isSelected => {
@@ -97,7 +97,7 @@ class KingdomPicker extends Component {
             otherParams.push(checkbox);
         });
 
-    const url = 'https://ben94ck4j8.execute-api.us-west-2.amazonaws.com/Stage/pick?boxes=' + params.toString() + "&others=" + otherParams.toString();
+    const url = 'https://dquee1shj5.execute-api.us-west-2.amazonaws.com/Prod/pick?boxes=' + params.toString() + "&others=" + otherParams.toString();
     this.getPick(url);
   };
 
@@ -150,8 +150,8 @@ class KingdomPicker extends Component {
   createKingdom = () => (
     <Kingdom
         keys={Object.keys(this.state.kingdom)}
-        cards={this.state.kingdom["Cards"]}
-        cardLikes={this.state.kingdom["Card-Likes"]}
+        cards={this.state.kingdom.cards}
+        cardLikes={this.state.kingdom.cardLikes}
     />
   );
 

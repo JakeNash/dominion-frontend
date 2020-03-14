@@ -5,6 +5,7 @@
   "dependencies": {
     "bootstrap": "^3.4.1",
     "react": "^16.8.2",
+    "react-bootstrap-table-next": "^4.0.0",
     "react-dom": "^16.8.2",
     "react-scripts": "2.1.5"
   },
