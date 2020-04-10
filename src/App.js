@@ -5,9 +5,9 @@ import Kingdom from "./Kingdom";
 
 const OPTIONS = ["Dominion", "Dominion1", "Dominion2", "Intrigue", "Intrigue1", "Intrigue2", "Seaside",
                  "Alchemy", "Prosperity", "Cornucopia", "Hinterlands", "Dark Ages", "Guilds", "Adventures",
-                 "Empires", "Nocturne", "Renaissance", "Promo"];
+                 "Empires", "Nocturne", "Renaissance", "Menagerie", "Promo"];
 
-const OTHERS = ["Adventures", "Empires", "Renaissance"];
+const OTHERS = ["Adventures", "Empires", "Renaissance", "Menagerie"];
 
 class KingdomPicker extends Component {
   state = {
